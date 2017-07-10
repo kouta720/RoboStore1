@@ -1,0 +1,159 @@
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+
+
+
+.mainStyle
+{   width:auto;
+    color: @textColor;
+    background-color:@endColor;
+    border: 1px solid @cBorderColor;}
+
+@headFont:"Comic Sans MS", cursive, sans-serif;
+@bodyFont:"Lucida Console", Monaco, monospace;
+@footFont: "Tahoma", Geneva, sans-serif;
+@textLogo: "Impact", Charcoal, sans-serif;
+
+@bgColor:#2e4f6b;
+@endColor:#0a0d0f;
+@borderColor:@endColor;
+@cBorderColor:#33cc33;
+@textSize: 15px;
+@textColor:#9abedd;
+@innerColor:#c2e1fb;
+
+
+header
+{ .mainStyle;
+  font-family: @headFont;
+  position: relative;
+
+  div
+  { height: 145px;
+    /*a img*/ #headerlogo
+    {   position: absolute;
+        margin:6.5px;
+        width: 130px;
+        height: 130px;}
+    #headername
+    { font-family: @textLogo;
+      font-size: @textSize + 9;
+      width:5px;
+      position: absolute;
+      top:40px;
+      left:150px;
+      display:block;}
+  }
+  .searchbox
+  { position: absolute;
+    top: 20px;
+    right: 20px;
+    width: auto;
+    height: auto;
+    border: 1px solid @cBorderColor;
+  }
+  .backgroundgradient
+  {	position: absolute;
+    top: 30%;
+    right: 10px;
+    width: 350px;
+
+
+  ul
+  { list-style-type: none;
+    margin: 1px;
+    padding: 2px;
+    overflow: hidden;
+    background-color: @endColor;}
+
+  li
+    {float: left;}
+
+ a {display: block;
+    color: @textColor;
+    text-align: center;
+    padding: 14px 6px;
+    text-decoration: none;
+    &:hover{background-color: #2e4f6b;color:black;}
+  }
+
+
+}
+
+
+}
+
+body
+{ background-color: @bgColor;
+  margin: auto;
+  width: 70%;
+  border: 3px solid @borderColor;
+  padding: 10px;
+  position:relative;
+  color:@textColor;
+  font-family: @bodyFont;
+
+        #welcomeimage
+        {
+        border: 1px solid @cBorderColor;
+        width:40%;
+        height:auto;
+        postion: absolute;
+        padding:5px;
+        margin:20px;
+        display:inline-block;}
+
+        #coffeeofthemonth
+        {
+        border: 1px solid @cBorderColor;
+        width:20%;
+        height:auto;
+        postion:absolute;
+          right:80px;
+        padding:5px;
+        margin:20px;
+        display:inline-block;}
+
+
+    fieldset {
+      font-family: @bodyFont;
+      border: 1px solid @borderColor;
+      border-radius: 2px;
+      padding: 5px;
+
+      legend {
+          padding: 5px;
+          font-size: @textSize;
+          border-radius: 1px;
+          margin-left: 20px;
+          margin: 2px;
+          }
+
+        }
+
+
+  section header
+  { text-align:center;
+    margin:20px;}
+  span
+  { column-width: 85px;
+    column-count: 2;
+    column-gap: 40px;
+    display:block;
+  }
+    mark
+    {display:block;
+     background-color:@cBorderColor;}
+}
+
+
+
+footer
+{ .mainStyle;
+  text-align: center;
+  font-size:@textSize - 5;
+  font-family: @footFont;}
